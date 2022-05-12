@@ -6,10 +6,11 @@
 
 **Architecture **
 
+
 Below is the high level diagram for monitoring the custom logs in Log Analytics workspace in Linux OS.
 
 
-Image  Fluent.image
+![](https://github.com/praveenambati1233/Azure/blob/main/images/FluentD.PNG)
 
 
 **Implementation**
@@ -17,14 +18,14 @@ Image  Fluent.image
 Step 1:  Enable LAW extension on the VM 
 
 
-Image VM_LOGS_1
+![](https://github.com/praveenambati1233/Azure/blob/main/images/VM_LOGS_1.png)
 
-Image  VM_LOGS_2
+![](https://github.com/praveenambati1233/Azure/blob/main/images/VM_LOGS_2.PNG)
 
 
 Once VM is connected to LAW. DependencyAgentLinux  & OMSAgentForLinux extensions get installed on the VM. 
 
-Image VMEXT 
+![](https://github.com/praveenambati1233/Azure/blob/main/images/VM_Ext.PNG)
 
 Step 2:  Install td-agent on Linux VM 
 
@@ -102,7 +103,7 @@ Step 5: Add below configuration at `/etc/td-agent/td-agent `
  
 Get the workspace id and primary key from LAW - Agents Management 
 
-image agent
+![](https://github.com/praveenambati1233/Azure/blob/main/images/Agent.PNG)
 
 Add below configuration at `/etc/td-agent/td-agent.conf`
 
@@ -152,15 +153,15 @@ Position file will be created
 Step 8:  TailLog_CL will be created in Log Analytics Workspace under Custom Logs.
 
 
-image LAW
+![](https://github.com/praveenambati1233/Azure/blob/main/images/LAW.PNG)
 
 Step 9: Create a alert 
 
 
-image alert
+![](https://github.com/praveenambati1233/Azure/blob/main/images/alert.PNG)
 
 
 Sample test alert
 
 
-image email
+![](https://github.com/praveenambati1233/Azure/blob/main/images/email.PNG)

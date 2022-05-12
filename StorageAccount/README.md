@@ -9,7 +9,7 @@ To download the blob from SA-Container, please follow below steps.
 **Step 1 : Get the Application id from System Managed identity or Use Managed identity**
 
 
-image sa
+![](https://github.com/praveenambati1233/Azure/blob/main/images/sa.PNG)
 
 **Step 2:  Login into subscription using System Managed identity/ User Manged identity**
 
